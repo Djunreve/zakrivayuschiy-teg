@@ -2,4 +2,7 @@
 :root {
     --font-main: "Inter-Variable", serif;
     --font-accent: "PressStart2P", fantasy;
+    --color-black: #000000;
+    --color-green: #00cc14;
+    --background-color: #fff; 
 }
