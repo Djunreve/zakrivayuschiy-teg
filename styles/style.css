@@ -106,3 +106,9 @@
 .card__title {
   font-size: 18px;
 }
+
+.card__img-title {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  color: var(--color-black);
+}
