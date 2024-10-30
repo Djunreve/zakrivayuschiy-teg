@@ -19,14 +19,13 @@
   flex-direction: column;
   align-items: center;
   background-image: repeating-linear-gradient(var(--stripes-gradient)), repeating-linear-gradient(90deg, var(--stripes-gradient)), repeating-linear-gradient(var(--gradient-saturation));
-  color: #000000;
+  color: var(--color-text);
   background-size: cover;
   background-attachment: fixed;
   font-family: var(--font-main);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-weight: 700;
-
 }
 
 .header {
@@ -45,10 +44,65 @@
 .header__logo {
   font-family: var(--font-accent);
   font-size: 65px;
+  padding-top: 133px;
 
 }
 
 .header__subtitle {
   font-family: var(--font-accent);
-    font-size: 23px;
+  font-size: 23px;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--link-shadow-color);
+  transition: var(--transition-duration);
+  border: 1px solid transparent;
+  outline: none;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border: 1px solid;
+  }
+}
+
+.theme-menu__item {
+  &+& {
+    margin-top: 14px;
+  }
+}
+
+.theme-menu__button {
+  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border: transparent;
+  outline: none;
+
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+    .cards-list {
+      background-color: var(--background-color);
+    }
+
+        .cards-list__item {
+  margin: 54px;
+  border: 2px solid #000000;
+}
+
+.card__title {
+  font-size: 18px;
 }
