@@ -6,17 +6,25 @@
 */
 
 :root.theme-light {
---color-text: var(--color-black, #000); 
+    --color-text: var(--color-black, #000);
+    --font-main: "Inter-Variable", serif;
+    --font-accent: "PressStart2P", fantasy;
+    --background-color: #fff;
+    --stripes-gradient: #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px;
+    --gradient-saturation: #e7e7e7 0.01%, #1a1a1a 100%;
 }
 
 
 :root.theme-dark {
---color-text:var(--color-green, #00CC14); 
+    --color-text: var(--color-green, #00CC14);
+    --font-main: "Inter-Variable", serif;
+    --font-accent: "PressStart2P", fantasy;
+    --background-color: #000;
+    --stripes-gradient: #000, #000 2px, transparent 2px, transparent 4px;
+    --gradient-saturation: #007f0c 0.01%, #004306 100%;
 }
 
 
 
 
-@media (prefers-color-scheme: dark) {
-
-}
+@media (prefers-color-scheme: dark) {}
