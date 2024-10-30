@@ -15,6 +15,40 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: repeating-linear-gradient(var(--stripes-gradient)), repeating-linear-gradient(90deg, var(--stripes-gradient)), repeating-linear-gradient(var(--gradient-saturation));
+  color: #000000;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font-main);
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-weight: 700;
+
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-accent);
+  background-color: var(--background-color);
+  border: 2px solid #000000;
+  inline-size: clamp(23.438rem, 3.125rem + 65vw, 43.75rem);
+  margin: 100px 0;
+  padding-block-end: 23px;
+  gap: 23px;
+}
+
+.header__logo {
+  font-family: var(--font-accent);
+  font-size: 65px;
+
+}
+
+.header__subtitle {
+  font-family: var(--font-accent);
+    font-size: 23px;
 }
