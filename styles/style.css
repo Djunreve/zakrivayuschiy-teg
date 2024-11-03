@@ -179,3 +179,31 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+
+
+/* Фильтры */
+
+
+
+.saturate {
+  filter: saturate(250%);
+}
+
+
+
+
+.filter_invert {
+  filter: invert(0.7);
+}
+
+.filter_sepia {
+  filter: sepia(80%);
+}
+
+.filter_blur {
+  filter: blur(2.5rem);
+}
+
+.filter_mix {
+
+}
