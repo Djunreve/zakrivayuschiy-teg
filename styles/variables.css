@@ -7,4 +7,5 @@
     --background-color: #fff; 
     --stripes-gradient: #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px;
     --gradient-saturation: #e7e7e7 0.01%, #1a1a1a 100%;
+    --outline-color: #fff; 
 }

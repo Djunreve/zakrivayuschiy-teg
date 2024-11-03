@@ -34,7 +34,7 @@
   align-items: center;
   font-family: var(--font-accent);
   background-color: var(--background-color);
-  border: 2px solid #000000;
+  border: 2px solid var(--outline-color);
   inline-size: clamp(23.438rem, 3.125rem + 65vw, 43.75rem);
   margin: 100px 0;
   padding-block-end: 23px;
@@ -77,6 +77,7 @@
 }
 
 .theme-menu__button {
+  position: relative;
   font-size: 14px;
   text-transform: uppercase;
   background: none;
@@ -94,30 +95,61 @@
   }
 }
 
-.cards-list {
-  background-color: var(--background-color);
+.theme-menu__button:disabled::before {
+  content: "▶";
+  color: currentColor;
 }
 
-.cards-list__item {
-  margin: 54px;
-  border: 2px solid #000000;
+.theme-menu__button::before {
+  content: " ";
+  display: inline-block;
+  width: 1em;
+  margin-right: 6px;
 }
+
 
 .cards-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--background-color);
 }
+
+
+.cards-list__item {
+  margin: 54px;
+  border: 2px solid var(--outline-color);
+}
+
 
 .card__title {
   font-size: 18px;
-  padding: 3px 10px 6px;
-  display: inline-block;
-  text-align: left;
+  padding: 5px 10px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper {
+  color: transparent;
+
+  /* Проверяем поддержку -webkit-text-stroke */
+  @supports (-webkit-text-stroke: 1px var(--outline-color)) {
+    -webkit-text-stroke: 1px var(--outline-color);
+  }
+
+  /* Фолбэк с использованием text-shadow */
+  @supports not (-webkit-text-stroke: 1px var(--outline-color)) {
+    text-shadow: 1px 1px var(--outline-color), -1px 1px var(--outline-color),
+      1px -1px var(--outline-color), -1px -1px var(--outline-color);
+  }
 }
 
 .card__img-title {
   position: absolute;
+  top: 22px;
+  right: 11px;
   color: var(--color-black);
   -webkit-text-stroke: 1px #FFFFFF;
   opacity: 0.5;
@@ -132,4 +164,18 @@
   display: block;
   inline-size: 100%;
   block-size: 100%;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 25px 25px 25px;
+
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
