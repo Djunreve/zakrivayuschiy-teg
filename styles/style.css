@@ -109,8 +109,18 @@
   display: inline-block;
   width: 1em;
   margin-right: 6px;
+  animation: shift 0.5s ease-in-out infinite alternate;
 }
 
+@keyframes shift {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(4px);
+  }
+}
 
 .cards-list {
   display: flex;
@@ -244,4 +254,30 @@
 .button__text {
   font-family: var(--font-accent);
   font-size: 14px;
+}
+
+
+.dialog {
+  color: #000;
+  background-color: var(--background-color);
+  inline-size: 357px;
+  height: 193px;
+  text-transform: uppercase;
+}
+
+.button__dialog {
+  
+
+}
+
+
+.button-image__save {
+  width: 39px;
+    height: 39px;
+  cursor: pointer;
+}
+
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
 }
