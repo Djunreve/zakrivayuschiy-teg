@@ -479,11 +479,14 @@
 				</svg>
 				<p class="button__text">Вставьте дискету, чтобы продолжить</p>
 			</div>
-			<form method="dialog">
-				<button type="submit" class="button button__dialog">
-					<span class="button__text">ок</span>
-				</button>
-			</form>
+			  <form method="dialog">
+                            <button
+                                class="button button__dialog"
+                                type="button"
+                                onclick="window['dialog'].close()">
+                                <span class="button-dialog__text">OK</span>
+                            </button>
+                        </form>
 		</dialog>
 		<script src="./scripts/like.js"></script>
 	</body>
