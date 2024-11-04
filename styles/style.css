@@ -260,22 +260,36 @@
 .dialog {
   color: #000;
   background-color: var(--background-color);
-  inline-size: 357px;
-  height: 193px;
+  inline-size: 353px;
+  height: 191px;
   text-transform: uppercase;
+  line-height: 150%;
+}
+.container__dialog {
+display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 293px;
+  margin: 30px 30px 0 30px;}
+
+.button-image__save {
+  display: flex;
+  flex-shrink: 0;
+  width: 39px;
+  cursor: pointer;
 }
 
 .button__dialog {
-  
+  line-height: 1.5;
+  width: 293px;
+  height: 38px;
+  border: 2px solid;
+  background-color: var(--background-color);
+  margin-top: 30px;
 
 }
 
 
-.button-image__save {
-  width: 39px;
-    height: 39px;
-  cursor: pointer;
-}
 
 
 dialog::backdrop {
