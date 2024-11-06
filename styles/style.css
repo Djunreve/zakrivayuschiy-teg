@@ -22,6 +22,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: min(100%, 700px);
+  margin: 0 auto;
   background-image: repeating-linear-gradient(var(--stripes-gradient)), repeating-linear-gradient(90deg, var(--stripes-gradient)), repeating-linear-gradient(var(--gradient-saturation));
   color: var(--color-text);
   background-size: cover;
@@ -30,6 +32,12 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-weight: 700;
+}
+
+@media (width <=375px) {
+  .page {
+    width: 100%;
+  }
 }
 
 .header {
@@ -48,7 +56,7 @@
   font-family: var(--font-accent);
   font-size: 65px;
   line-height: 65px;
-    margin-block-start: 136px;
+  margin-block-start: 136px;
 }
 
 .header__subtitle {
@@ -181,7 +189,7 @@
 
 
 .cards-list__item {
-  margin: 54px;
+  margin-bottom: 52px;
   border: 2px solid var(--outline-color);
 }
 
@@ -257,9 +265,7 @@
   background-color: var(--button-background-color);
   cursor: pointer;
 
-  &:focus {
-    
-  }
+  &:focus {}
 }
 
 /* Фильтры */
@@ -307,6 +313,8 @@
   transition: 0.5s;
   border: 2px solid var(--color-black);
   padding: 15px 20px;
+  margin-top: 50px;
+  margin-bottom: 103px;
 }
 
 .button__icon {
