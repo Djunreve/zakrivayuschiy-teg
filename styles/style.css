@@ -247,9 +247,27 @@
 }
 
 .card__buttons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  padding: 25px 25px 24px 0;
+}
+
+.card__icon-button {
+    display: flex;
+      min-height: 38px;
+      border-color: transparent;
+      padding: 0;
+      background-color: transparent;
+      transition: border-color 0.5s ease-in-out;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
 }
 
 
