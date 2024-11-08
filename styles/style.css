@@ -143,7 +143,6 @@
 .theme-menu__button:focus {
   &::after {
     width: 100%;
-    opacity: 0.6;
   }
 }
 
