@@ -34,12 +34,6 @@
   font-weight: 700;
 }
 
-@media (width <=375px) {
-  .page {
-    width: 100%;
-  }
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -269,6 +263,11 @@
   block-size: 38px;
 }
 
+
+.button:focus {
+outline: none;
+}
+
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--accent-color);
   transition: 0.3s ease;
@@ -291,13 +290,9 @@
   transform: translateX(0);
 }
 
-
-
-
-
-
-
-
+.like-icon {
+cursor: pointer;
+}
 
 /* Стили для анимации лайка в сердце */
 
@@ -456,7 +451,7 @@
   width: 293px;
   height: 38px;
   border: 2px solid;
-  background-color: var(--background-color);
+  background-color: var(--background-color); 
   margin-top: 30px;
   color: var(--color-text);
 
@@ -472,3 +467,5 @@ dialog::backdrop {
   text-transform: uppercase;
   cursor: pointer;
 }
+
+
