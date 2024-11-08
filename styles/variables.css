@@ -10,4 +10,5 @@
     --gradient-saturation: #e7e7e7 0.01%, #1a1a1a 100%;
     --outline-color: #fff; 
     --accent-color: #000;
+    --container-width: clamp(23.438rem, 3.125rem + 65vw, 43.75rem);
 }
