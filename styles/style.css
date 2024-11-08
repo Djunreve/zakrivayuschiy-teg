@@ -203,8 +203,6 @@
   position: relative;
 }
 
-.wrapper {
-  color: transparent;
 
   /* Проверяем поддержку -webkit-text-stroke */
   @supports (-webkit-text-stroke: 1px var(--outline-color)) {
