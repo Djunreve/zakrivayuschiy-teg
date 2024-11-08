@@ -67,8 +67,6 @@
   margin-bottom: 25px;
 }
 
-
-
 .theme-menu__item {
   &+& {
     margin-top: 14px;
@@ -147,7 +145,6 @@
   }
 }
 
-
 .cards-list {
   display: flex;
   flex-direction: column;
@@ -156,12 +153,10 @@
   margin: 50px;
 }
 
-
 .cards-list__item {
   margin-bottom: 52px;
   border: 2px solid var(--outline-color);
 }
-
 
 .card__title {
   font-size: 18px;
@@ -214,7 +209,6 @@
   flex-direction: column;
   gap: 27px;
   padding: 25px 25px 25px;
-
 }
 
 .card__buttons {
@@ -246,7 +240,6 @@
   opacity: 0;
 }
 
-
 .button {
   position: relative;
   display: flex;
@@ -263,9 +256,8 @@
   block-size: 38px;
 }
 
-
 .button:focus {
-outline: none;
+  outline: none;
 }
 
 .button:focus-visible {
@@ -291,7 +283,7 @@ outline: none;
 }
 
 .like-icon {
-cursor: pointer;
+  cursor: pointer;
 }
 
 /* Стили для анимации лайка в сердце */
@@ -362,8 +354,6 @@ cursor: pointer;
   min-height: 38px;
 }
 
-
-
 /* Фильтры */
 
 .filter_contrast {
@@ -417,7 +407,6 @@ cursor: pointer;
   cursor: pointer;
 }
 
-
 .dialog {
   display: flex;
   flex-direction: column;
@@ -451,10 +440,9 @@ cursor: pointer;
   width: 293px;
   height: 38px;
   border: 2px solid;
-  background-color: var(--background-color); 
+  background-color: var(--background-color);
   margin-top: 30px;
   color: var(--color-text);
-
 }
 
 dialog::backdrop {
@@ -467,5 +455,3 @@ dialog::backdrop {
   text-transform: uppercase;
   cursor: pointer;
 }
-
-
