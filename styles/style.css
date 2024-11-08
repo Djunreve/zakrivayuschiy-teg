@@ -149,13 +149,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background-color);
   margin: 50px;
 }
 
 .cards-list__item {
   margin-bottom: 52px;
   border: 2px solid var(--outline-color);
+  background-color: var(--background-color);
 }
 
 .card__title {
@@ -356,7 +356,6 @@
 }
 
 /* Фильтры */
-
 .filter_contrast {
   filter: contrast(30%);
 }
@@ -455,4 +454,57 @@ dialog::backdrop {
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+
+
+@media (width <=375px) {
+  .header {
+    inline-size: 100%;
+  }
+
+  .card__title {
+    max-inline-size: 316px;
+  }
+
+  .card-image {
+    block-size: 375px;
+  }
+
+  .card-image__title {
+    padding: 25px 11px 0 0;
+  }
+
+  .card__content {
+    margin-block-start: 21px;
+  }
+
+  .save-button {
+    margin-block-start: 51px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .floppy {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
+  .dialog[open] {
+    max-inline-size: 341px;
+  }
+
+  .container__dialog {
+    gap: 18px;
+    padding-inline: 42px;
+  }
+
+  .button {
+    padding-inline: 0;
+  }
+
+  .button__dialog {
+    inline-size: 257px;
+  }
 }
