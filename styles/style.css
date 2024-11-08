@@ -248,13 +248,6 @@
   border-color: var(--accent-color, #000);
 }
 
-.card__like-button,
-.like-icon {
-  background-color: var(--button-background-color);
-  cursor: pointer;
-}
-
-
 .card__icon-button .sparks {
   opacity: 0;
 }
@@ -371,8 +364,7 @@
 
 .card__like-button {
   min-width: 130px;
-    min-height: 38px;
-  border: 2px solid var(--accent-color);
+  min-height: 38px;
 }
 
 
