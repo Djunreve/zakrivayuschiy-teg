@@ -260,7 +260,7 @@
   font-size: 14px;
   line-height: 0.9;
   cursor: pointer;
-  transition: box-shadow 0.5s, color 0.5s;
+  transition: box-shadow 0.3s, color 0.3s;
   block-size: 38px;
   color: var(--color-text);
 }
