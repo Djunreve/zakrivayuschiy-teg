@@ -1,1 +1,1 @@
-https://github.com/Djunreve/zakrivayuschiy-teg
+https://github.com/Djunreve/zakrivayuschiy-teg-f
