@@ -16,6 +16,7 @@
     --button-background-color: #fff;
     --accent-color: #000;
     --stroke-color: #fff;
+    --button-text-color: #fff;
 }
 
 
@@ -30,6 +31,7 @@
     --button-background-color: #000;
     --accent-color: #00CC14;
     --stroke-color: #000;
+    --button-text-color: #00cc14;
 }
 
 
@@ -45,5 +47,6 @@
         --button-background-color: #000;
         --accent-color: #00CC14;
         --stroke-color: #000;
+        --button-text-color: #00cc14;
     }
 }

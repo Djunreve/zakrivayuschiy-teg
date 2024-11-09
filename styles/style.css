@@ -43,8 +43,8 @@
   background-color: var(--background-color);
   border: 2px solid var(--outline-color);
   width: var(--container-width);
-  margin: 100px 0 100px 0;
-  padding-block-end: 23px;
+  margin: 102px 0 100px 0;
+  margin-block-end: 100px;
 }
 
 .header__logo {
@@ -64,22 +64,27 @@
   font-family: var(--font-accent);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
-  margin-block-start: 21px;
+  margin-block-start: 20px;
   margin-bottom: 25px;
 }
 
-.theme-menu__item {
-  &+& {
-    margin-top: 14px;
-  }
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-inline-start: 19px;
+  padding-block-end: 25px;
+  list-style: none;
 }
+
+
 
 .theme-menu__button {
   position: relative;
   font-size: 14px;
   text-transform: uppercase;
   background: none;
-  border: transparent;
+  border: 1px solid transparent;
   outline: none;
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -156,14 +161,14 @@
 }
 
 .cards-list__item {
-  margin-bottom: 52px;
+  margin-bottom: 50px;
   border: 2px solid var(--outline-color);
   background-color: var(--background-color);
 }
 
 .card__title {
   font-size: 18px;
-  padding: 5px 10px;
+  padding: 5px 10px 3px;
 }
 
 .wrapper {
@@ -173,15 +178,15 @@
 
 .card__img-title {
   position: absolute;
-  top: 22px;
-  right: 11px;
   color: var(--accent-color);
-  -webkit-text-stroke: 1px var(--stroke-color);
-  opacity: 0.5;
-  font-family: var(--font-accent);
+  font-family: var(--font-accent, "PressStart2P", fantasy);
   font-size: 14px;
   font-weight: 400;
   z-index: 1;
+  inset-inline-end: min(3.467vi, 25px);
+  inset-block-start: 25px;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
 
 }
 
@@ -205,17 +210,25 @@
   display: block;
   inline-size: 100%;
   block-size: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card__content {
-  display: flex;
+display: flex;
   flex-direction: column;
-  gap: 27px;
-  padding: 25px 25px 25px;
-  font-family:var(--font-main);
-  font-size: 18px;
-  font-weight: 400;
+  padding: 27px 25px 24px;
+  gap: 25px;
+ 
+}
+
+.card__content-text {
+  display: flex;
+    flex-direction: column;
+    line-height: 117%;
+    gap: 27px;
+    text-align: left;
+ font-weight: 400;
 }
 
 .card__buttons {
@@ -223,7 +236,6 @@
   justify-content: end;
   align-items: center;
   gap: 5px;
-  padding: 25px 25px 24px 0;
 }
 
 .card__icon-button {
@@ -261,7 +273,6 @@
   cursor: pointer;
   transition: box-shadow 0.3s, color 0.3s;
   block-size: 38px;
-  color: var(--color-text);
 }
 
 .button:focus {
@@ -289,10 +300,6 @@
 .button:hover::after {
   transform: translateX(0);
 
-}
-
-.button:hover {
-  color: #fff;
 }
 
 .like-icon {
@@ -361,6 +368,7 @@
 .like-icon.is-liked .sparks {
   animation: like-with-sparks 0.3s ease-in 0.3s;
 }
+
 /*Стили для поставленного лайка*/
 
 .card__like-button {
@@ -401,9 +409,8 @@
 /*Футер*/
 .button__save {
   height: 55px;
-  padding: 15px 20px;
-  margin-top: 50px;
-  margin-bottom: 103px;
+  margin: 0 auto 105px;
+    padding: 15px 18px;
 }
 
 .button__icon {
@@ -413,13 +420,13 @@
 }
 
 .button__text {
-  flex-shrink: 0;
   font-family: var(--font-accent);
   font-size: 14px;
   cursor: pointer;
   z-index: 1;
   max-width: 300px;
-  color: var(--color-text);
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
 }
 
 .dialog {

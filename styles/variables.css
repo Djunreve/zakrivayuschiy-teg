@@ -11,4 +11,5 @@
     --outline-color: #fff; 
     --accent-color: #000;
     --container-width: clamp(23.438rem, 3.125rem + 65vw, 43.75rem);
+    --button-text-color: #fff;--font-shadow: #fff;
 }
