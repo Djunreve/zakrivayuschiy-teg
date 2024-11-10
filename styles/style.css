@@ -413,10 +413,12 @@ display: flex;
     padding: 15px 18px;
 }
 
-.button__icon {
+.floppy {
   margin-right: 8px;
   width: 21px;
   height: 21px;
+  mix-blend-mode: difference;
+  z-index: 1;
 }
 
 .button__text {
